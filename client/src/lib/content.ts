@@ -22,8 +22,8 @@ export const SECTIONS: PageSection[] = [
     title: "How the National Organization for Women Drove Social Reform During Second-Wave Feminism",
     shortTitle: "Thesis",
     heroTitle: "How the National Organization for Women Drove Social Reform During Second-Wave Feminism",
-    image: ARCHIVAL_IMAGES.homepageHero,
-    imageCaption: "Early members and supporters of NOW during second wave feminism.",
+    image: ARCHIVAL_IMAGES.beverlyMorgan,
+    imageCaption: "Beverly Morgan",
     paragraphs: [
       "Second-wave feminism was a movement from the 1960s to the 1980s that focused on expanding women’s rights in areas such as workplace equality, reproductive rights, and political representation. One of the most important organizations involved in this movement was the National Organization for Women otherwise known as NOW, which was founded in 1966 and is still alive today. NOW used protests, political activism, legal action, and public pressure to fight for equal opportunities for women in the United States.",
       "This website explores how NOW drove social reform during second wave feminism through workplace equality, reproductive rights activism, protests, and political advocacy, while also examining criticisms."

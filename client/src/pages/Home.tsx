@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#faf8f2] text-[#1f2421] font-body flex flex-col selection:bg-[#e06a3b]/20 selection:text-[#0d5c56]">
       {/* Top Header & Navigation Bar */}
-      <header className="bg-[#0d5c56] text-[#faf8f2] shadow-md sticky top-0 z-50">
+      <header className="bg-[#2f6c68] text-[#faf8f2] shadow-md sticky top-0 z-50">
         {/* Title Bar */}
         <div className="max-w-7xl mx-auto px-4 py-2.5 text-center md:text-left">
           <p className="font-sans font-semibold text-xs sm:text-sm tracking-tight text-[#faf8f2]/90 leading-tight">
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
 
         {/* Tabbed Navigation Bar */}
-        <div className="border-t border-[#faf8f2]/10 overflow-x-auto scrollbar-none bg-[#0a4d47]">
+        <div className="border-t border-[#faf8f2]/10 overflow-x-auto scrollbar-none bg-[#1e4b47]">
           <nav className="max-w-7xl mx-auto px-4 flex space-x-1 sm:space-x-1.5 py-1.5">
             {SECTIONS.map((section) => {
               const isActive = section.id === activeSectionId;
@@ -47,8 +47,8 @@ export default function Home() {
                   onClick={() => setActiveSectionId(section.id)}
                   className={`px-3 py-1 rounded-sm text-[11px] sm:text-xs font-sans font-medium transition-all duration-150 whitespace-nowrap ${
                     isActive
-                      ? "bg-[#faf8f2] text-[#0d5c56] font-semibold shadow-sm"
-                      : "text-[#faf8f2]/80 hover:text-[#faf8f2] hover:bg-[#0d5c56]/40"
+                      ? "bg-[#faf8f2] text-[#2f6c68] font-semibold shadow-sm"
+                      : "text-[#faf8f2]/80 hover:text-[#faf8f2] hover:bg-[#2f6c68]/40"
                   }`}
                 >
                   {section.shortTitle}
@@ -59,7 +59,7 @@ export default function Home() {
         </div>
 
         {/* Thin Burnt Orange Accent Line */}
-        <div className="h-[3px] bg-[#e06a3b] w-full" />
+        <div className="h-[3px] bg-[#d28a2d] w-full" />
       </header>
 
       {/* Main Content Area */}
@@ -75,10 +75,10 @@ export default function Home() {
                 <img
                   src={activeSection.image?.src}
                   alt={activeSection.image?.alt}
-                  className="w-full h-full object-cover filter grayscale contrast-125 brightness-95"
+                  className="w-full h-full object-cover brightness-95"
                 />
                 {/* Subtle Teal Overlay */}
-                <div className="absolute inset-0 bg-[#0d5c56]/30 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-[#2f6c68]/20 mix-blend-multiply" />
                 
                 {/* White Serif Title placed over the image */}
                 <div className="absolute inset-0 flex items-center justify-center p-6 sm:p-12 text-center bg-black/25">
@@ -112,7 +112,7 @@ export default function Home() {
           <div className="space-y-8">
             {/* Chapter Heading */}
             <div className="border-b border-[#border] pb-4">
-              <h2 className="text-2xl sm:text-3xl font-display font-bold text-[#0d5c56]">
+              <h2 className="text-2xl sm:text-3xl font-display font-bold text-[#2f6c68]">
                 {activeSection.title}
               </h2>
             </div>
@@ -124,7 +124,7 @@ export default function Home() {
                   <img
                     src={activeSection.image.src}
                     alt={activeSection.image.alt}
-                    className="w-full h-full object-contain filter grayscale contrast-[1.1]"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <div className="text-center pt-2.5 mt-2 border-t border-[#border]/30">
@@ -201,7 +201,7 @@ export default function Home() {
             variant="outline"
             onClick={handlePrev}
             disabled={activeIndex === 0}
-            className={`w-full sm:w-auto font-sans text-xs uppercase tracking-wider px-4 py-2 border-[#0d5c56]/20 text-[#0d5c56] hover:bg-[#0d5c56] hover:text-[#faf8f2] transition-colors duration-150 ${
+            className={`w-full sm:w-auto font-sans text-xs uppercase tracking-wider px-4 py-2 border-[#2f6c68]/20 text-[#2f6c68] hover:bg-[#2f6c68] hover:text-[#faf8f2] transition-colors duration-150 ${
               activeIndex === 0 ? "opacity-40 cursor-not-allowed" : ""
             }`}
           >
@@ -216,7 +216,7 @@ export default function Home() {
             variant="outline"
             onClick={handleNext}
             disabled={activeIndex === SECTIONS.length - 1}
-            className={`w-full sm:w-auto font-sans text-xs uppercase tracking-wider px-4 py-2 border-[#0d5c56]/20 text-[#0d5c56] hover:bg-[#0d5c56] hover:text-[#faf8f2] transition-colors duration-150 ${
+            className={`w-full sm:w-auto font-sans text-xs uppercase tracking-wider px-4 py-2 border-[#2f6c68]/20 text-[#2f6c68] hover:bg-[#2f6c68] hover:text-[#faf8f2] transition-colors duration-150 ${
               activeIndex === SECTIONS.length - 1 ? "opacity-40 cursor-not-allowed" : ""
             }`}
           >
@@ -226,7 +226,7 @@ export default function Home() {
       </main>
 
       {/* Page Footer */}
-      <footer className="bg-[#0d5c56] text-[#faf8f2] py-6 border-t border-[#e06a3b]/30">
+      <footer className="bg-[#2f6c68] text-[#faf8f2] py-6 border-t border-[#d28a2d]/30">
         <div className="max-w-4xl mx-auto px-4 text-center space-y-2">
           <p className="text-xs sm:text-sm font-sans font-medium">
             Lilah Pantallion & Lila Morgan

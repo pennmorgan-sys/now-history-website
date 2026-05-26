@@ -48,38 +48,38 @@
 }
 
 :root {
-  /* Teal Brand Colors */
-  --primary: oklch(0.35 0.05 185); /* Deep Teal #0d5c56 */
-  --primary-foreground: oklch(0.98 0.01 85); /* Cream #faf8f2 */
+  /* Exact Teal Palette: #2f6c68 */
+  --primary: #2f6c68;
+  --primary-foreground: #faf8f2;
   
-  /* Accent: Burnt Orange */
-  --accent: oklch(0.62 0.16 35); /* Burnt Orange #e06a3b */
-  --accent-foreground: oklch(0.98 0.01 85);
+  /* Exact Light Orange Accent Palette: #d28a2d */
+  --accent: #d28a2d;
+  --accent-foreground: #faf8f2;
 
-  /* Background & Canvas: Warm Cream */
-  --background: oklch(0.98 0.01 85); /* Cream #faf8f2 */
-  --foreground: oklch(0.22 0.01 160); /* Charcoal #1f2421 */
+  /* Cream Base Palette: #bfbda2 */
+  --background: #faf8f2;
+  --foreground: #1f2421;
 
-  --card: oklch(0.99 0.005 85); /* Slightly lighter cream */
-  --card-foreground: oklch(0.22 0.01 160);
+  --card: #faf8f2;
+  --card-foreground: #1f2421;
 
-  --popover: oklch(0.99 0.005 85);
-  --popover-foreground: oklch(0.22 0.01 160);
+  --popover: #faf8f2;
+  --popover-foreground: #1f2421;
 
-  --secondary: oklch(0.93 0.02 185); /* Tinted teal-cream for buttons/badges */
-  --secondary-foreground: oklch(0.35 0.05 185);
+  --secondary: #bfbda2;
+  --secondary-foreground: #2f6c68;
 
-  --muted: oklch(0.94 0.01 160);
-  --muted-foreground: oklch(0.45 0.01 160);
+  --muted: #bfbda2;
+  --muted-foreground: #1f2421;
 
-  --destructive: oklch(0.55 0.18 28);
-  --destructive-foreground: oklch(0.98 0.01 85);
+  --destructive: #742e12;
+  --destructive-foreground: #faf8f2;
 
-  --border: oklch(0.88 0.01 160);
-  --input: oklch(0.88 0.01 160);
-  --ring: oklch(0.35 0.05 185);
+  --border: #bfbda2;
+  --input: #bfbda2;
+  --ring: #2f6c68;
 
-  --radius: 0.25rem; /* Classic, sharper corners for academic look */
+  --radius: 0.25rem;
 }
 
 @layer base {
@@ -123,7 +123,7 @@
     .container {
       padding-left: 3rem;
       padding-right: 3rem;
-      max-width: 1140px; /* Elegant book-like layout width */
+      max-width: 1140px;
     }
   }
 }

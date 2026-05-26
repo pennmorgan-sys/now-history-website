@@ -53,8 +53,8 @@ export const ARCHIVAL_IMAGES = {
   },
   // Page 8/9: Beverly Morgan photo on the Interview page
   beverlyMorgan: {
-    src: "/manus-storage/pdf_image-007_0f8da2ff.png",
-    caption: "Beverly Morgan, who supported the National Organization for Women during the second-wave feminist movement, pictured with family.",
+    src: "/manus-storage/pasted_file_h81DzV_IMG_8108_a63f09e9.jpeg",
+    caption: "Beverly Morgan",
     alt: "Beverly Morgan Interview Photo"
   },
   // Page 10: NOW supporters protesting to protect reproductive rights in the United States
