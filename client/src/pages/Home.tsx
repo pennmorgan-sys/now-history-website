@@ -75,10 +75,12 @@ export default function Home() {
                 <img
                   src={activeSection.image?.src}
                   alt={activeSection.image?.alt}
-                  className="w-full h-full object-cover brightness-95"
+                  className={`w-full h-full object-cover ${
+                    activeSectionId === "thesis" ? "filter grayscale contrast-125 brightness-95" : "brightness-95"
+                  }`}
                 />
                 {/* Subtle Teal Overlay */}
-                <div className="absolute inset-0 bg-[#2f6c68]/20 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-[#2f6c68]/30 mix-blend-multiply" />
                 
                 {/* White Serif Title placed over the image */}
                 <div className="absolute inset-0 flex items-center justify-center p-6 sm:p-12 text-center bg-black/25">
